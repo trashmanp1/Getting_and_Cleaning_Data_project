@@ -79,5 +79,5 @@ ADL_tidy_data <- dcast(melt_data, subject + Activity_Label ~ variable, mean)
 
 ####################################################
 # write clean tidy data to file, the row names of ADL_tidy_data are not to be written
-write.table(ADL_tidy_data, file =paste0(path_to_dir,"/ADL_tidy_data.txt",row.name=FALSE))
+write.table(ADL_tidy_data, file =paste0(path_to_dir,"/ADL_tidy_data.txt"),row.name=FALSE)
 ####################################################
